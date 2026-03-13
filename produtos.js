@@ -1,4 +1,4 @@
-let produtos = [
+export let produtos = [
   { id: 1, nome: "Coca-cola 2L", preco_venda: 10.0, preco_compra: 5.0, estoque: 100, rotatividade: "alta", curva_abc: "A" },
   { id: 2, nome: "Pepsi 2L", preco_venda: 9.0, preco_compra: 4.5, estoque: 80, rotatividade: "alta", curva_abc: "B" },
   { id: 3, nome: "Fanta Laranja 2L", preco_venda: 8.0, preco_compra: 4.0, estoque: 60, rotatividade: "media", curva_abc: "B" },
@@ -143,5 +143,15 @@ let produtos = [
 //console.log(totalEstoque)
 
 //**********************Média do Preco de compra**************** */
-let totalEstoque = produtos.reduce((acumulador, produto) => acumulador + (produto.estoque/produto.preco_compra), 0 );
-console.log(totalEstoque)
+//let totalEstoque = produtos.reduce((acumulador, produto) => acumulador + (produto.estoque/produto.preco_compra), 0 );
+//console.log(totalEstoque)
+
+
+//************************ Comando para pegar produtos e estoque igual ou menor que 50  destaca o que vc quer E traz os demais  ********** *** **
+//let estoque = produtos.filter(produto => produto.estoque <= 50);
+//console.table(estoque);
+
+//*********************já o Find é igual ao Select******* Busca o dado direto na condição que vc quer **** eficiencia de performance 
+//let estoqueFind = produtos.find((produto) => produto.estoque <= 50);
+//console.log(estoqueFind);
+
