@@ -155,3 +155,6 @@ export let produtos = [
 //let estoqueFind = produtos.find((produto) => produto.estoque <= 50);
 //console.log(estoqueFind);
 
+let totalEstoque = produtos.reduce((acumulador, produto) => acumulador + (produto.preco_compra), 0 );
+console.log(totalEstoque)
+
